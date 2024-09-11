@@ -10,7 +10,7 @@ Test-Repo
 
 3. npm i gh-pages  damit füge ich dem package.json Github  Pages hinzu (node_modules) 
 
-fallst node modules weg sein sollte einsfach mit npm i --- werden alle direekt wieder hergestellt anhand der verhandenen Daten und Versionen von deinen Packages
+falls node modules weg sein sollte einafach mit npm i --- werden alle direkt wiederhergestellt, anhand der vorhandenen Daten und Versionen von deinen Packages
 
 
 */
