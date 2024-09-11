@@ -1,0 +1,3 @@
+node_modules
+
+# .gitignore alle dinge die hier angegeben sind, wie verschlüsselungen oder bsplw. node_modules, werden ignoriert und nicht mit hochgeladen.
