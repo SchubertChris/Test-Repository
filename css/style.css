@@ -33,7 +33,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
   background: var(--color-background);
 }
 
@@ -179,7 +178,7 @@ main h1 {
 main h1::after {
   content: attr(data-shadow);
   position: absolute;
-  top: 7%;
+  top: 9%;
   left: 0;
   width: 100%;
   z-index: -1;

@@ -1,55 +1,75 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Willkommen bei Candlescope">
-    <script src="https://kit.fontawesome.com/7bb860d4a6.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Willkommen bei Candlescope" />
+    <script
+      src="https://kit.fontawesome.com/7bb860d4a6.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Candlescope / Ai-Trading</title>
-    <link rel="stylesheet" href="/css/projects.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/projects.css" />
+  </head>
+  <body>
     <div class="background-container"></div>
-    
+
     <header>
-        <div class="left">
-            <img src="/assets/images/cs gold.png" alt="Bild von mir">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="/index.html">About</a></li>
-                <li><a href="/pages/projects.html">Projects</a></li>
-                <li><a href="/pages/download.html" id="download">Download</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Über Mich</a></li>
-                        <li><a href="#">Templates</a></li>
-                        <li><a href="#">Lebenslauf</a></li>
-                        <li><a href="#">Zertifikate</a></li>
-                        <li><a href="#">Anschreiben</a></li>
-                    </ul>
-                </li>
+      <div class="left">
+        <img src="/assets/images/cs gold.png" alt="Bild von mir" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/index.html">About</a></li>
+          <li><a href="/pages/projects.html">Projects</a></li>
+          <li>
+            <a href="/pages/download.html" id="download">Download</a>
+            <ul class="dropdown">
+              <li><a href="#">Über Mich</a></li>
+              <li><a href="#">Templates</a></li>
+              <li><a href="#">Lebenslauf</a></li>
+              <li><a href="#">Zertifikate</a></li>
+              <li><a href="#">Anschreiben</a></li>
             </ul>
-        </nav>
-        <button>
-          <a href="https://www.instagram.com/candlescope/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://github.com/SchubertChris" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="pages/contact.html"><i class="fa-solid fa-envelope-open-text"></i></a>
-          </button>
+          </li>
+        </ul>
+      </nav>
+      <button>
+        <a href="https://www.instagram.com/candlescope/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://github.com/SchubertChris" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="/pages/contact.html"
+          ><i class="fa-solid fa-envelope-open-text"></i
+        ></a>
+      </button>
     </header>
-      <main>
+    <section class="insta-container">
+      <div class="insta-cont">
+        <iframe id="insta-vid-1" src="/assets/video/instagram-content/Instagram-Post (1).mp4" frameborder="0"></iframe>
+        <iframe id="insta-vid-2" src="/assets/video/instagram-content/Instagram-Post (2).mp4" frameborder="0"></iframe>
+        <iframe id="insta-vid-3" src="/assets/video/instagram-content/Instagram-Post (3).mp4" frameborder="0"></iframe>
+        <img id="chart" src="/assets/images/solana-analyse.Ai.png" alt="Chartanalyse von Solana (Kryptowährung) Technische Finanzanalyse">
+        <iframe id="insta-vid-4" src="/assets/video/instagram-content/Instagram-Post (4).mp4" frameborder="0"></iframe>
+        <iframe id="insta-vid-5" src="/assets/video/instagram-content/Instagram-Post (5).mp4" frameborder="0"></iframe>
+        <iframe id="insta-vid-6" src="/assets/video/instagram-content/Instagram-Post (6).mp4" frameborder="0"></iframe>
+      </div>
+    </section>
 
-      </main>
+    <footer>
+      <h2>&copy; Chris Schubert</h2>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector("header");
+        const headerImg = header.querySelector(".left img");
 
-      <footer>
-        <h2>&copy; Chris Schubert</h2>
-      </footer>
-      <script>document.addEventListener('DOMContentLoaded', function() {
-        const header = document.querySelector('header');
-        const headerImg = header.querySelector('.left img');
-      
-        headerImg.addEventListener('click', function() {
-          header.classList.toggle('expanded');
+        headerImg.addEventListener("click", function () {
+          header.classList.toggle("expanded");
         });
-      });</script>
-</body>
+      });
+    </script>
+  </body>
 </html>

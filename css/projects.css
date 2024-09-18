@@ -1,1 +1,201 @@
 @import url(/css/style.css);
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header {
+  img:hover {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+.insta-container {
+  width: 100%;
+}
+
+iframe, img {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid var(--color-dark-gold);
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 2px 3px 5px var(--color-dark-gold);
+  }
+}
+
+.insta-cont {
+  display: grid;
+  padding: 150px;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  grid-template-areas: 
+    "vid5 . vid2 . vid3"
+    "chart chart chart chart chart"
+    "vid6 . vid1 . vid4";
+}
+
+#chart {
+  grid-area: chart;
+  width: 100%;
+  height: 400px;
+}
+
+[id^="insta-vid-"] {
+  width: 400px;
+  height: 400px;
+}
+
+#insta-vid-1, #insta-vid-2 {
+  width: 300px;
+  height: 300px;
+}
+
+#insta-vid-1 { grid-area: vid1; }
+#insta-vid-2 { grid-area: vid2; }
+#insta-vid-3 { grid-area: vid3; }
+#insta-vid-4 { grid-area: vid4; }
+#insta-vid-5 { grid-area: vid5; }
+#insta-vid-6 { grid-area: vid6; }
+#insta-vid-7 { grid-area: vid7; }
+#insta-vid-8 { grid-area: vid8; }
+#insta-vid-9 { grid-area: vid9; }
+
+@media (max-width: 600px) {
+  header {
+    margin-left: 1.2rem;
+  }
+
+  .insta-container {
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .insta-cont {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    gap: 10px;
+    grid-template-areas: 
+      "vid5"
+      "vid2"
+      "vid3"
+      "chart"
+      "vid6"
+      "vid1"
+      "vid4";
+  }
+
+  #chart {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  [id^="insta-vid-"] {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+  }
+
+  [id^="insta-vid-"]:hover {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+  #chart {
+    height: 350px;
+  }
+
+  [id^="insta-vid-"] {
+    width: 200px;
+    height: 200px;
+  }
+
+  #insta-vid-1, #insta-vid-2 {
+    width: 250px;
+    height: 250px;
+  }
+
+  .insta-cont {
+    display: grid;
+    padding: 150px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    grid-template-areas: 
+      "vid5 . vid2 . vid3"
+      "chart chart chart chart chart"
+      "vid6 . vid1 . vid4";
+  }
+}
+
+@media (min-width: 1200px) {
+  #chart {
+    height: 800px;
+  }
+
+  [id^="insta-vid-"] {
+    width: 400px;
+    height: 400px;
+  }
+
+  #insta-vid-1, #insta-vid-2 {
+    width: 450px;
+    height: 450px;
+  }
+
+  .insta-cont {
+    display: grid;
+    padding: 150px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    grid-template-areas: 
+      "vid1 . vid2 . vid3"
+      "chart chart chart chart chart"
+      "vid4 . vid5 . vid6";
+  }
+}
+
+@keyframes slide-in-from-top {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(10%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+[id^="insta-vid-"], #chart {
+  animation: slide-in-from-top 1s ease-out;
+}
