@@ -1,3 +1,5 @@
+
+
 :root {
   --color-white: #ffffff;
   --color-black: #000000;
@@ -194,6 +196,7 @@ main h1::after {
     rgba(255, 255, 255, 0) 0%,
     rgba(255, 255, 255, 1) 180%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -340,9 +343,6 @@ footer {
     margin-top: 20px;
     p {
       top: 40%;
-    }
-    .start.btn {
-    }
   }
   @keyframes h1-slide {
     0% {
@@ -456,4 +456,5 @@ footer {
       transform: translateX(0%);
     }
   }
+}
 }
