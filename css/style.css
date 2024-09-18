@@ -34,16 +34,6 @@ body {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-}
-
-/* ----------------------------------- Background ----------------------------------- */
-.background-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
   background: var(--color-background);
 }
 
@@ -166,7 +156,7 @@ header li:hover .dropdown {
   display: block;
 }
 
-/* ----------------------------------- Start Section ----------------------------------- */
+/* ----------------------------------- Main ----------------------------------- */
 
 main {
   width: 100%;
@@ -178,7 +168,6 @@ main {
   z-index: -1;
   overflow: hidden;
 }
-
 main h1 {
   width: max-content;
   animation: h1-slide 15s infinite both linear;
@@ -201,6 +190,7 @@ main h1::after {
 }
 
 main p {
+  white-space: nowrap;
   font-family: Azonix;
   font-size: 1.5rem;
   color: var(--color-white);
@@ -216,7 +206,7 @@ main .start-btn {
   font-family: Azonix;
   position: absolute;
   top: 10%;
-  left: 20%;
+  left: 15%;
   cursor: pointer;
   border: none;
   font-size: 1.3rem;
@@ -233,6 +223,20 @@ main .start-btn:hover {
 main .start-btn:before {
   content: "Mehr";
   animation: changeText 15s infinite;
+}
+
+/* ----------------------------------- Footer ----------------------------------- */
+
+footer{
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  align-content: center;
+  color: var(--color-white);
+  font-family: Azonix;
+  font-size: .6rem;
+  margin-top: auto;
+  background-color: var(--color-dark-gray);
 }
 
 /* ----------------------------------- Keyframes ----------------------------------- */
@@ -319,32 +323,16 @@ main .start-btn:before {
 
 /* ----------------------------------- Media Queries ----------------------------------- */
 @media (max-width: 1200px) {
-
-  main{
-    margin-top: 200px;
-  }
-  header {
-    width: 100%;
-    min-width: 600px;
-    max-width: 200px;
-    padding: 1rem;
-    margin: 2rem auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid var(--color-white);
-    background-color: var(--color-light-gray);
-    color: var(--color-white);
-    border-radius: 50px;
-    position: fixed;
-    top: 1%;
-    z-index: 1000;
-  }
-  header nav {
-    width: 100%;
-  }
   header button {
     display: none;
+  }
+  main{
+    margin-top: 20px;
+    p{
+      top: 40%;
+    }
+    .start.btn{
+    }
   }
   @keyframes h1-slide {
     0% {
@@ -365,29 +353,6 @@ main .start-btn:before {
   }
 }
 @media (max-width: 600px) {
-  body {
-    display: flex;
-  }
-  
-  main{
-    margin-top: 200px;
-  }
-  main .first-el {
-    animation: h1-slide 20s infinite backwards linear;
-    position: absolute;
-    font-family: Azonix;
-    font-size: 3rem;
-    color: var(--color-white);
-    z-index: -1;
-    width: 20%;
-    text-align: center;
-  }
-  main .first-el::after {
-    content: attr(data-shadow);
-    top: 70%;
-    width: 20%;
-  }
-  
   header {
     flex-direction: column;
     align-items: center;
@@ -401,17 +366,14 @@ main .start-btn:before {
     overflow: hidden;
     position: fixed;
   }
-
   header.expanded {
     height: 300px;
     width: 90%;
     max-width: 300px;
   }
-
   header .left {
     margin-bottom: 20px;
   }
-
   header .left img {
     width: 80px;
     height: 80px;
@@ -419,32 +381,26 @@ main .start-btn:before {
     background-color: var(--color-black);
     cursor: pointer;
   }
-
   header nav {
     width: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
   }
-
   header.expanded nav {
     opacity: 1;
   }
-
   header nav ul {
     flex-direction: column;
     width: 100%;
     padding: 0;
     list-style-type: none;
   }
-
   header .dropdown {
     display: none;
   }
-
   header nav li:hover .dropdown {
     display: none !important;
   }
-
   header nav li {
     width: 100%;
     padding: 1rem;
@@ -453,29 +409,26 @@ main .start-btn:before {
     transform: translateY(-20px);
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   }
-
   header.expanded nav li {
     opacity: 1;
     transform: translateY(0);
   }
-
   header.expanded nav li:nth-child(1) {
     transition-delay: 0.1s;
   }
-
   header.expanded nav li:nth-child(2) {
     transition-delay: 0.2s;
   }
-
   header.expanded nav li:nth-child(3) {
     transition-delay: 0.3s;
   }
-
   button.contact {
     display: none;
   }
 
-
+  main{
+    margin-top: 180px;
+  }
   @keyframes h1-slide {
     0% {
       transform: translateX(0%);
