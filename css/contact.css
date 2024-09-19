@@ -1,10 +1,10 @@
 /* Importiere eine externe CSS-Datei */
-@import url(style.css);
+@import url(../style.css);
 
 /* Definiere eine benutzerdefinierte Schriftart */
 @font-face {
   font-family: digital;
-  src: url(/fonts/digital/DS-DIGIB.TTF);
+  src: url(../fonts/digital/DS-DIGIB.TTF);
 }
 
 /* Definiere CSS-Variablen für wiederverwendbare Farben und Stile */

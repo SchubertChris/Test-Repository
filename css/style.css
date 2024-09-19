@@ -2,7 +2,7 @@
 /* ----------------------------------- Fonts + ROOT----------------------------------- */
 @font-face {
   font-family: Azonix;
-  src: url(/fonts/Azonix/Azonix.otf);
+  src: url(../fonts/Azonix/Azonix.otf);
 }
 
 :root {
