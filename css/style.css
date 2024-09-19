@@ -239,7 +239,7 @@ main .start-btn:before {
 }
 /* ----------------------------------- Grid-About-Me ----------------------------------- */
 .container {
-  background: url(/assets/images/pexels-photo-755405.jpeg) no-repeat center fixed;
+  background: url(./assets/images/pexels-photo-755405.jpeg) no-repeat center fixed;
   background-size: cover;
   margin: 120px 0px;
   display: grid;
@@ -287,7 +287,7 @@ main .start-btn:before {
   text-shadow: 1px 1px 5px var(--color-black);
   text-align: center;
   align-content: center;
-  background: url(/assets/images/pexels-photo-26728898.webp) no-repeat center center;
+  background: url(../assets/images/pexels-photo-26728898.webp) no-repeat center center;
   background-size: cover;
   grid-row: 1 / 2; /* Das große horizontale Rechteck */
   grid-column: 2 / 4;
@@ -319,11 +319,10 @@ main .start-btn:before {
   font-size: 1.5rem;
   text-align: center;
   align-content: center;
-  background: url(/assets/images/pexels-photo-7293787.jpeg) no-repeat center center;
+  background: url(../assets/images/pexels-photo-7293787.jpeg) no-repeat center center;
   background-size: cover;
   grid-row: 2 / 3; /* Das obere rechte vertikale Rechteck */
   grid-column: 3 / 4;
-  background-color: rgba(27, 27, 27, 0.8); /* Slightly transparent background */
   color: var(--color-white);
   border: 1px solid var(--color-white);
   border-radius: 10px;
@@ -352,7 +351,7 @@ main .start-btn:before {
   font-size: 1.5rem;
   text-align: center;
   align-content: center;
-  background: url(/assets/images/pexels-photo-2115257.webp) no-repeat center center;
+  background: url(../assets/images/pexels-photo-2115257.webp) no-repeat center center;
   background-size: cover;
   grid-row: 3 / 4; /* Das untere rechte vertikale Rechteck */
   grid-column: 3 / 4;
@@ -384,7 +383,7 @@ main .start-btn:before {
   font-size: 1.5rem;
   text-align: center;
   align-content: center;
-  background: url(/assets/images/pexels-photo-5190957.webp) no-repeat center center;
+  background: url(../assets/images/pexels-photo-5190957.webp) no-repeat center center;
   background-size: cover;
   grid-row: 2 / 3; /* Das Quadrat in der Mitte */
   grid-column: 2 / 3;
@@ -416,7 +415,7 @@ main .start-btn:before {
   font-size: 1.5rem;
   text-align: center;
   align-content: center;
-  background: url(/assets/images/pexels-photo-9789242.webp) no-repeat center center;
+  background: url(../assets/images/pexels-photo-9789242.webp) no-repeat center center;
   background-size: cover;
   grid-row: 3 / 4; /* Das kleine horizontale Rechteck unten */
   grid-column: 2 / 3;
@@ -448,7 +447,7 @@ main .start-btn:before {
   font-size: 1.5rem;
   text-align: center;
   align-content: center;
-  background: url(/assets/images/pexels-photo-3057960.jpeg) no-repeat center center;
+  background: url(../assets/images/pexels-photo-3057960.jpeg) no-repeat center center;
   background-size: cover;
   grid-row: 4 / 5; /* Das neue Element unten rechts */
   grid-column: 2 / 4;
