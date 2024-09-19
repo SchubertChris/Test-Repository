@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Willkommen bei Candlescope/ Contact">
+  <script src="https://kit.fontawesome.com/7bb860d4a6.js" crossorigin="anonymous"></script>
+  <title>Candlescope / Ai-Trading</title>
+  <link rel="stylesheet" href="/css/contact.css">
+  <title>Kontakt</title>
+</head>
+<body>
+<header>
+  <div class="left">
+        <img src="/assets/images/cs gold.png" alt="Candlescope Logo">
+  </div>
+  <nav>
+      <ul>
+          <li><a href="/index.html">About</a></li>
+          <li><a href="/pages/projects.html">Projects</a></li>
+          <li><a href="/pages/download.html" id="download">Download</a>
+              <ul class="dropdown">
+                  <li><a href="#">Über Mich</a></li>
+                  <li><a href="#">Templates</a></li>
+                  <li><a href="#">Lebenslauf</a></li>
+                  <li><a href="#">Zertifikate</a></li>
+                  <li><a href="#">Anschreiben</a></li>
+              </ul>
+          </li>
+      </ul>
+  </nav>
+  <button>
+    <a href="https://www.instagram.com/candlescope/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://github.com/SchubertChris" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="pages/contact.html"><i class="fa-solid fa-envelope-open-text"></i></a>
+    </button>
+</header>
+<section id="contact-box">
+  <div class="contact-text">
+    <h2>contact Us</h2>
+    <p>Candlescope</p>
+    <h2>call Us</h2>
+    <p>mobile 0160/ 941 683 48</p>
+    <h2>available</h2>
+    <p>Mo - Fr:</p>
+    <p id="clock">08:00 - 20:00</p>
+  </div>
+  <div class="contact-form">
+  <form action="/submit_form" method="post">
+    <div class="form-group">
+      <label for="fname">First name: <span>*</span></label>
+      <input type="text" id="name" name="name" autofocus required>
+    </div>    <div class="form-group">
+      <label for="lname">Last name: <span>*</span></label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email: <span>*</span></label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone">
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message: <span>*</span></label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</section>
+  <script>document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('header');
+    const headerImg = header.querySelector('.left img');
+  
+    headerImg.addEventListener('click', function() {
+      header.classList.toggle('expanded');
+    });
+  });
+  </script>
+      <script>
+        window.onload = function() {
+            const clock = document.getElementById('clock');
+            
+            // Füge die Klasse hinzu, die die Animation startet
+            setTimeout(() => {
+                clock.classList.add('falling');
+            }, 1000); // Startet die Animation nach 1 Sekunde
+        };
+    </script>
+  </body>
+</html>

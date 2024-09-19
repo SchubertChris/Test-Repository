@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Willkommen bei Candlescope">
+    <script src="https://kit.fontawesome.com/7bb860d4a6.js" crossorigin="anonymous"></script>
+    <title>Candlescope / Ai-Trading</title>
+    <link rel="stylesheet" href="/css/download.css">
+</head>
+<body>
+    <div class="background-container"></div>
+    
+    <header>
+        <div class="left">
+            <img src="/assets/images/cs gold.png" alt="Candlescope Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">About</a></li>
+                <li><a href="/pages/projects.html">Projects</a></li>
+                <li><a href="/pages/download.html" id="download">Download</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Über Mich</a></li>
+                        <li><a href="#">Templates</a></li>
+                        <li><a href="#">Lebenslauf</a></li>
+                        <li><a href="#">Zertifikate</a></li>
+                        <li><a href="#">Anschreiben</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <button>
+          <a href="https://www.instagram.com/candlescope/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/SchubertChris" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="/pages/contact.html"><i class="fa-solid fa-envelope-open-text"></i></a>
+          </button>
+    </header>
+      <main>
+
+      </main>
+
+      <footer>
+        <h2>&copy; Chris Schubert</h2>
+      </footer>
+      <script>document.addEventListener('DOMContentLoaded', function() {
+        const header = document.querySelector('header');
+        const headerImg = header.querySelector('.left img');
+      
+        headerImg.addEventListener('click', function() {
+          header.classList.toggle('expanded');
+        });
+      });</script>
+</body>
+</html>

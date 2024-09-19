@@ -1,0 +1,102 @@
+@import url(/css/style.css);
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header {
+  img:hover {
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+/* ----------------------------------- Grid-Container ----------------------------------- */
+
+
+.insta-container{
+  margin: 110px;
+  background: url(https://cdn.pixabay.com/photo/2021/05/22/06/53/btc-6272691_1280.jpg) no-repeat center center/cover;
+  width: 100%;
+}
+
+.insta-cont {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  grid-template-columns: repeat(6, 250px);
+  grid-template-rows: repeat(3, 250px);
+  gap: 5rem;
+  width: 80%;
+  padding: 2rem;
+}
+
+#insta-vid-2, 
+#insta-vid-1, 
+#insta-vid-3, 
+#insta-vid-4, 
+#insta-vid-5, 
+#insta-vid-6 {
+  grid-area: auto;
+  max-width: 250px;
+  max-height: 250px;
+}
+
+#chart { 
+  grid-area: 2 / 2 / 4 / 6; 
+}
+
+#insta-vid-1 { grid-area: 1 / 2 / 2 / 3; }
+#insta-vid-2 { grid-area: 1 / 3 / 2 / 4; }
+#insta-vid-3 { grid-area: 1 / 6 / 2 / 7; }
+#insta-vid-4 { grid-area: 1 / 4 / 1 / 5; }
+#insta-vid-5 { grid-area: 2 / 6 / 3 / 7; }
+#insta-vid-6 { grid-area: 3 / 6 / 3 / 6; }
+
+iframe,
+img {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid var(--color-dark-gold);
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 2px 3px var(--color-dark-gold);
+  }}
+/* ----------------------------------- Grid-Container-Items ----------------------------------- */
+
+/* ----------------------------------- Media Queries ----------------------------------- */
+
+@media (max-width: 600px) {
+  header {
+    margin-left: 1.2rem;
+  }
+}
+  /* ----------------------------------- Keyframe ----------------------------------- */
+
+@keyframes slide-in-from-top {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(10%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+[id^="insta-vid-"],
+#chart {
+  animation: slide-in-from-top 1s ease-out;
+}
