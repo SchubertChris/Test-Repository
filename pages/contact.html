@@ -10,11 +10,11 @@
   <title>Kontakt</title>
 </head>
 <body>
-  <div class="background-container"></div>
-
 <header>
   <div class="left">
-      <img src="/assets/images/cs gold.png" alt="Candlescope Logo">
+      <a href="/index.html">
+        <img src="/assets/images/cs gold.png" alt="Candlescope Logo">
+      </a>
   </div>
   <nav>
       <ul>
@@ -37,9 +37,17 @@
     <a href="pages/contact.html"><i class="fa-solid fa-envelope-open-text"></i></a>
     </button>
 </header>
-
-<div class="contact-form">
-  <h2>Contact Us</h2>
+<section id="contact-box">
+  <div class="contact-text">
+    <h2>contact Us</h2>
+    <p>Candlescope</p>
+    <h2>call Us</h2>
+    <p>mobile 0160/ 941 683 48</p>
+    <h2>available</h2>
+    <p>Mo - Fr:</p>
+    <p id="clock">08:00 - 20:00</p>
+  </div>
+  <div class="contact-form">
   <form action="/submit_form" method="post">
     <div class="form-group">
       <label for="fname">First name: <span>*</span></label>
@@ -68,6 +76,7 @@
       <button type="submit">Submit</button>
     </div>
   </form>
+</section>
   <script>document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('header');
     const headerImg = header.querySelector('.left img');
@@ -75,7 +84,17 @@
     headerImg.addEventListener('click', function() {
       header.classList.toggle('expanded');
     });
-  });</script>
+  });
+  </script>
+      <script>
+        window.onload = function() {
+            const clock = document.getElementById('clock');
+            
+            // Füge die Klasse hinzu, die die Animation startet
+            setTimeout(() => {
+                clock.classList.add('falling');
+            }, 1000); // Startet die Animation nach 1 Sekunde
+        };
+    </script>
   </body>
-</div>
 </html>

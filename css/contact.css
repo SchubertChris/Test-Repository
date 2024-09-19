@@ -1,42 +1,69 @@
+/* Importiere eine externe CSS-Datei */
 @import url(style.css);
 
-:root {
-  --primary-color: rgb(255, 208, 79);
-  --secondary-color: rgba(255, 255, 255, 0.1);
-  --border-color: rgba(255, 255, 255, 0.3);
-  --text-color: white;
-  --placeholder-color: rgba(255, 255, 255, 0.6);
-  --focus-bg-color: var(--border-color);
-  --focus-border-color: var(--primary-color);
-  --button-bg-color: rgba(255, 255, 255, 0.2);
-  --button-hover-bg-color: rgba(255, 208, 79, 0.8);
-  --button-hover-text-color: black;
-  --button-border-color: var(--primary-color);
-  --box-shadow-color: var(--border-color);
-  --title-text-shadow: var(--border-color);
-  --button-text-shadow: black;
+/* Definiere eine benutzerdefinierte Schriftart */
+@font-face {
+  font-family: digital;
+  src: url(/fonts/digital/DS-DIGIB.TTF);
 }
 
+/* Definiere CSS-Variablen für wiederverwendbare Farben und Stile */
+:root {
+  --primary-color: rgb(255, 208, 79);
+  --border-color: rgba(255, 255, 255, 0.3);
+  --button-bg-color: rgba(255, 255, 255, 0.2);
+  --secondary-color: rgba(255, 255, 255, 0.1);
+  --placeholder-color: rgba(255, 255, 255, 0.6);
+  --button-hover-bg-color: rgba(255, 208, 79, 0.8);
+  --text-color: white;
+  --button-text-shadow: black;
+  --button-hover-text-color: black;
+  --focus-bg-color: var(--border-color);
+  --box-shadow-color: var(--border-color);
+  --title-text-shadow: var(--border-color);
+  --focus-border-color: var(--primary-color);
+  --button-border-color: var(--primary-color);
+}
+
+/* Setze allgemeine Stile für alle Elemente */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Contact Form Container */
+/* Stil für das Kontaktformular-Container */
+#contact-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  background-color: rgba(0, 0, 0);
+  padding: 2rem;
+  border-radius: 20px;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 0 15px var(--box-shadow-color);
+}
+
+/* Stil für das Kontaktformular */
 .contact-form {
-  background-color: var(--secondary-color);
   padding: 3rem 4rem 0rem 4rem;
   border-radius: 20px;
   border: 2px solid var(--border-color);
-  width: 90%;
-  max-width: 600px;
+  width: 50%;
   box-shadow: 0 0 15px var(--box-shadow-color);
   color: var(--text-color);
 }
 
-/* Form Title */
-.contact-form h2 {
+/* Zentriere den Text im Kontaktformular */
+.contact-text {
+  margin: 0 auto;
+}
+
+/* Stil für den Titel des Formulars */
+h2 {
+  margin-top: 5rem;
   text-align: center;
   color: var(--primary-color);
   font-family: Azonix;
@@ -45,11 +72,21 @@
   margin-bottom: 1.5rem;
 }
 
-/* Form Groups */
+/* Stil für die Beschreibung im Formular */
+p {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-family: Azonix;
+}
+
+/* Stil für die Formulargruppen */
 .form-group {
   margin-bottom: 1.3rem;
 }
 
+/* Stil für die Labels in den Formulargruppen */
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
@@ -57,23 +94,28 @@
   font-family: Azonix;
 }
 
+/* Stil für die Eingabefelder und Textbereiche in den Formulargruppen */
 .form-group input,
 .form-group textarea {
   width: 100%;
   padding: 0.8rem;
   border-radius: 10px;
-  background-color: var(--secondary-color);
-  border: 2px solid var(--border-color);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 2px solid var(--border-color);
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: .9rem;
   font-family: Azonix;
+  resize: none;
 }
 
+/* Stil für die Platzhalter in den Eingabefeldern und Textbereichen */
 .form-group input::placeholder,
 .form-group textarea::placeholder {
   color: var(--placeholder-color);
 }
 
+/* Stil für fokussierte Eingabefelder und Textbereiche */
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
@@ -81,12 +123,13 @@
   border-color: var(--focus-border-color);
 }
 
+/* Stil für den Text in den Formulargruppen */
 span {
   color: var(--primary-color);
   font-size: 15px;
 }
 
-/* Submit Button */
+/* Stil für den Submit-Button im Kontaktformular */
 .contact-form button {
   width: 100%;
   padding: 1rem;
@@ -101,26 +144,104 @@ span {
   text-shadow: 1px 2px 3px var(--button-text-shadow);
 }
 
+/* Stil für den Absende-Button im Hover-Zustand */
 .contact-form button:hover {
   background-color: var(--button-hover-bg-color);
   color: var(--button-hover-text-color);
   transform: scale(1.05);
 }
 
+/* Medienabfrage für Bildschirme mit einer Mindestbreite von 600px */
 @media (min-width: 600px) {
-  .contact-form {
+  #contact-box {
     margin-top: 20px;
   }
 }
 
+/* Medienabfrage für Bildschirme mit einer Maximalbreite von 1200px */
 @media (max-width: 1200px) {
-  .contact-form {
+  #contact-box {
     margin-top: 200px;
   }
 }
 
+/* Medienabfrage für Bildschirme mit einer Maximalbreite von 600px */
 @media (max-width: 600px) {
-  .contact-form {
+  #contact-box {
     margin-top: 200px;
+  }
+}
+
+/* Stil für die Uhr */
+#clock {
+  font-family: digital;
+  font-size: 2rem;
+  animation: flicker 2s infinite;
+}
+
+/* Keyframes für die Flicker-Animation der Uhr */
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0.1;
+  }
+  10% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0.2;
+  }
+  70% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.1;
+  }
+  80% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
   }
 }
