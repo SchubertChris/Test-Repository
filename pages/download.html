@@ -37,9 +37,55 @@
           </button>
     </header>
 
-      <footer>
-        <h2>&copy; Chris Schubert</h2>
-      </footer>
+    <section id="download-cards">
+      <div class="card">
+        <h3>About</h3>
+        <i class="fa-regular fa-user" id="icon-about"></i>
+        <p>Erfahren Sie mehr über mich und meine Arbeit.</p>
+        <a href="#" class="btn" id="btn-about">Download</a>
+      </div>
+      <div class="card">
+        <h3>Templates</h3>
+        <i class="fa-solid fa-cubes" id="icon-templates"></i>
+        <p>Verschiedene Vorlagen für Ihre Projekte.</p>
+        <a href="#" class="btn" id="btn-templates">Download</a>
+      </div>
+      <div class="card">
+        <h3>CV</h3>
+        <i class="fa-regular fa-file-pdf" id="icon-cv"></i>
+        <p>Mein aktueller Lebenslauf zum Download.</p>
+        <a href="#" class="btn" id="btn-cv">Download</a>
+      </div>
+      <div class="card">
+        <h3>Certificates</h3>
+        <i class="fa-solid fa-certificate" id="icon-certificates"></i>
+        <p>Meine Zertifikate und Zeugnisse.</p>
+        <a href="#" class="btn" id="btn-certificates">Download</a>
+      </div>
+      <div class="card">
+        <h3>Cover letter</h3>
+        <i class="fa-regular fa-file-lines" id="icon-cl"></i>
+        <p>Complete documents</p>
+        <a href="#" class="btn" id="btn-cl">Download</a>
+      </div>
+    </section>
+    <!-- IDs: #icon-about, #icon-templates, #icon-cv, #icon-certificates, #icon-cl -->
+
+    <footer>
+      <h2>&copy; Chris Schubert</h2>
+      <button class="footer-btn-copy">
+        <a href="https://www.instagram.com/candlescope/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://github.com/SchubertChris" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="../pages/contact.html"
+          ><i class="fa-solid fa-envelope-open-text"></i
+        ></a>
+        
+      </button>
+    </footer>
       <script>document.addEventListener('DOMContentLoaded', function() {
         const header = document.querySelector('header');
         const headerImg = header.querySelector('.left img');
