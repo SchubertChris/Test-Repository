@@ -1,1 +1,98 @@
 @import url(./style.css);
+
+#download-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 100px 20px 0px 20px;
+}
+
+.card {
+    background-color: #f0f0f0; /* Assuming a light grey background from style.css */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #222; /* Assuming a dark grey color from style.css */
+    margin-bottom: 10px;
+}
+
+#icon-about, #icon-templates, #icon-cv, #icon-certificates, #icon-cl{
+    font-size: 3rem;
+    color: #ce9953; /* Assuming a blue color from style.css */
+    margin: 2rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555; /* Assuming a medium grey color from style.css */
+    margin: auto 0; /* Centering the paragraph vertically */
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ce9953; /* Assuming a blue color from style.css */
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 1rem 0;
+}
+
+.btn:hover {
+    background-color: rgb(235, 175, 96);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    #download-cards {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 230px;
+        margin-bottom: 100px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+    #download-cards {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    #download-cards {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}

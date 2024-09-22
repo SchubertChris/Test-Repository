@@ -37,13 +37,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0px auto 100px auto;
   width: 80%;
   height: 100%;
-  background-color: rgba(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  background: url(../assets/images/);
   padding: 2rem;
   border-radius: 20px;
   border: 2px solid var(--border-color);
-  box-shadow: 0 0 15px var(--box-shadow-color);
+  box-shadow: 1px 3px 15px var(--box-shadow-color);
 }
 
 /* Stil für das Kontaktformular */
@@ -71,7 +73,9 @@ h2 {
   text-shadow: 0 0 10px var(--title-text-shadow);
   margin-bottom: 1.5rem;
 }
-
+h3{
+  font-size: .9rem;
+}
 /* Stil für die Beschreibung im Formular */
 p {
   text-align: center;
@@ -157,7 +161,6 @@ span {
     margin-top: 20px;
   }
 }
-
 /* Medienabfrage für Bildschirme mit einer Maximalbreite von 1200px */
 @media (max-width: 1200px) {
   #contact-box {
