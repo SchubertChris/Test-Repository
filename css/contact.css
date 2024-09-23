@@ -180,6 +180,14 @@ span {
   font-family: digital;
   font-size: 2rem;
   animation: flicker 2s infinite;
+  &:hover{
+    cursor: default;
+    transition: 2s;
+    color: rgb(0, 233, 0);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    background-color: var(--primary-color);
+    border-radius: 30px;
+  }
 }
 
 /* Keyframes für die Flicker-Animation der Uhr */
