@@ -23,7 +23,7 @@ header {
     #1a1a1a,
     #1a1a1a 10px,
     #333333 10px,
-    #333333 20px
+    #d4be97 20px
   );
   border-radius: 20px;
   width: 100%;
@@ -31,6 +31,8 @@ header {
   justify-content: center;
   align-items: center;
   align-content: center;
+  outline: 2px solid #ccc;
+  border: 2px solid gold;
 }
 
 .insta-cont {
@@ -103,12 +105,6 @@ header {
     animation: slide-in-from-top 1s ease-out, awesome-animation 2s ease-in-out, glow 2s backwards infinite;
   }
 
-  #growt, #growt i {
-    font-size: 10rem;
-    color: rgba(255, 255, 255, 0.3);
-    grid-area: 4 / 6 / 5 / 7;
-    text-align: center;
-  }
   
   /* ----------------------------------- Grid-Container-Items ----------------------------------- */
   
