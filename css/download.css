@@ -4,7 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 3rem;
     padding: 100px 20px 0px 20px;
 }
 
@@ -16,6 +16,7 @@
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 250px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,6 +25,7 @@
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: rotate3d(1, 1, 1, 10deg);
 }
 
 .card h3 {
@@ -87,12 +89,7 @@
 
 @media (min-width: 768px) {
     #download-cards {
-        flex-direction: column;
         align-items: center;
         margin-top: 0px;
-    }
-
-    .card {
-        width: 90%;
     }
 }
