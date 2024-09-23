@@ -102,6 +102,13 @@ header {
   #chart {
     animation: slide-in-from-top 1s ease-out, awesome-animation 2s ease-in-out, glow 2s backwards infinite;
   }
+
+  #growt, #growt i {
+    font-size: 10rem;
+    color: rgb(171, 124, 5, 0.6);
+    grid-area: 4 / 6 / 5 / 7;
+    text-align: center;
+  }
   
   /* ----------------------------------- Grid-Container-Items ----------------------------------- */
   
