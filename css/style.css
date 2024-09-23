@@ -29,11 +29,12 @@
 body {
   width: 100%;
   min-height: 100vh;
-  background-color: var(--color-black);
+  background-color: var(--color-background);
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* background: radial-gradient(circle, #d4be97 13%, #b8a686 85%); */
   background: var(--color-background);
 }
 
