@@ -16,9 +16,16 @@ header {
 /* ----------------------------------- Grid-Container ----------------------------------- */
 
 
-.insta-container{
+.insta-container {
   margin: 300px auto 150px auto;
-  background: url(../assets/images/background-projects.png) no-repeat center center/cover;
+  background: repeating-linear-gradient(
+    135deg,
+    #1a1a1a,
+    #1a1a1a 10px,
+    #333333 10px,
+    #333333 20px
+  );
+  border-radius: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -44,12 +51,13 @@ header {
     height: 100%;
     max-width: 100%;
     margin: 0 auto;
-    min-width: 40px;
-    min-height: 40px;
+    min-width: 100px;
+    min-height: 100px;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
     border: 2px solid #ccc;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation:  glow 2s infinite;
   }
 
   #insta-vid-6 {
@@ -65,9 +73,11 @@ header {
 
   [id^="insta-vid-"]:hover {
     transform: scale(1.1);
-    box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.3);
   }
-
+  #chart:hover {
+    transform: scale(1.05);
+  }
+  
   #chart {
     grid-area: 2 / 1 / 5 / 6;
     width: 100%;
@@ -80,38 +90,74 @@ header {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
   }
-
+  
   #chart img {
     width: 100%;
     height: 100%;
     transition: transform 0.3s ease;
   }
-
-  #chart:hover img {
-    transform: scale(1.1);
-  }
-
-  #chart:hover {
-    transform: scale(1.05);
-    box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.3);
-  }
-
+  
+  
   [id^="insta-vid-"],
   #chart {
-    animation: slide-in-from-top 1s ease-out, awesome-animation 2s ease-in-out;
+    animation: slide-in-from-top 1s ease-out, awesome-animation 2s ease-in-out, glow 2s backwards infinite;
   }
-
-/* ----------------------------------- Grid-Container-Items ----------------------------------- */
-
+  
+  /* ----------------------------------- Grid-Container-Items ----------------------------------- */
+  
 /* ----------------------------------- Media Queries ----------------------------------- */
 
 @media (max-width: 600px) {
   header {
     margin-left: 1.2rem;
   }
+  [id^="insta-vid-"] {
+    transform: scale(1);
+    &:hover {
+      transform: scale(1.5);
+      z-index: 1001;
+    }
+  }
+  #chart{
+    transform: scale(1.2);
+    &:hover {
+      transform: scale(1.6);
+    }
+  }
 }
+
+
+@media (min-width: 600px) and (max-width: 1199px) {
+  [id^="insta-vid-"] {
+    transform: scale(0.7);
+    &:hover {
+      transform: scale(0.8);
+    }
+  }
+  #chart{
+    transform: scale(1.2);
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
   /* ----------------------------------- Keyframe ----------------------------------- */
 
+  @keyframes glow {
+    0% {
+      border-color: #ccc;
+      box-shadow: 0 0 5px #ccc;
+    }
+    50% {
+      border-color: gold;
+      box-shadow: 0 0 20px gold;
+    }
+    100% {
+      border-color: #ccc;
+      box-shadow: 0 0 5px #ccc;
+    }
+  }
 @keyframes slide-in-from-top {
   0% {
     transform: translateY(-100%);
@@ -126,8 +172,32 @@ header {
     opacity: 1;
   }
 }
+@media (max-width: 1200px) {
+  .insta-container {
+    margin: 200px auto 250px auto;
+    padding: 5rem;
+  }
 
-[id^="insta-vid-"],
-#chart {
-  animation: slide-in-from-top 1s ease-out;
+  .insta-cont {
+    padding: 2rem;
+    gap: 5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+  }
+
+  [id^="insta-vid-"] {
+    aspect-ratio: 1 / 1;
+    max-height: 100%;
+  }
+
+  #insta-vid-1 { grid-area: 1 / 1 / 2 / 2; }
+  #insta-vid-2 { grid-area: 2 / 1 / 3 / 2; }
+  #insta-vid-3 { grid-area: 7 / 1 / 8 / 2; }
+  #insta-vid-4 { grid-area: 4 / 1 / 5 / 2; }
+  #insta-vid-5 { grid-area: 5 / 1 / 6 / 2; }
+  #insta-vid-6 { grid-area: 6 / 1 / 7 / 2; }
+
+  #chart {
+    grid-area: 3 / 1 / 4 / 2;
+  }
 }
