@@ -70,7 +70,6 @@
         margin-top: 230px;
         margin-bottom: 100px;
     }
-
     .card {
         width: 90%;
     }
@@ -91,5 +90,6 @@
     #download-cards {
         align-items: center;
         margin-top: 0px;
+        margin-bottom: 20px;
     }
 }
