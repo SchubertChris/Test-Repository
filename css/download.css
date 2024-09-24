@@ -1,6 +1,11 @@
 @import url(./style.css);
+@font-face {
+    font-family: Azonix;
+    src: url(../fonts/Azonix/Azonix.otf);
+}
 
 #download-cards {
+    font-family: Azonix;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
