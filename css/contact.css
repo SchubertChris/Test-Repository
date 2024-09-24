@@ -190,9 +190,8 @@ span {
   &:hover{
     cursor: default;
     transition: 2s;
-    color: rgb(0, 233, 0);
+    color: rgb(233, 31, 31);
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
-    background-color: var(--primary-color);
     border-radius: 30px;
   }
 }
