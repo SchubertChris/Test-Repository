@@ -14,8 +14,6 @@ header {
 }
 
 /* ----------------------------------- Grid-Container ----------------------------------- */
-
-
 .insta-container {
   margin: 300px auto 150px auto;
   border-radius: 20px;
@@ -97,12 +95,8 @@ header {
   #chart {
     animation: slide-in-from-top 1s ease-out, awesome-animation 2s ease-in-out, glow 2s backwards infinite;
   }
-
-  
-  /* ----------------------------------- Grid-Container-Items ----------------------------------- */
   
 /* ----------------------------------- Media Queries ----------------------------------- */
-
 @media (max-width: 600px) {
   header {
     margin-left: 1.2rem;
