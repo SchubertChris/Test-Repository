@@ -166,12 +166,19 @@ span {
   #contact-box {
     margin-top: 200px;
   }
+  .contact-form{
+    width: 70%;
+    margin-left: 25px;
+  }
 }
 
 /* Medienabfrage für Bildschirme mit einer Maximalbreite von 600px */
 @media (max-width: 600px) {
   #contact-box {
     margin-top: 200px;
+  }
+  .contact-form {
+    width: 100%;
   }
 }
 
