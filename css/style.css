@@ -743,6 +743,12 @@ footer {
   .item1 {
     font-size: 0.7rem;
   }
+  .item3{
+    font-size: 1.2rem;
+  }
+  .item6{
+    font-size: 0.92rem;
+  }
   main h1 {
     font-size: 3rem;
     left: 25%;
