@@ -9,7 +9,7 @@
 }
 
 .card {
-    background-color: #f0f0f0; /* Assuming a light grey background from style.css */
+    background-color: #f0f0f0; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -30,26 +30,26 @@
 
 .card h3 {
     font-size: 1.5rem;
-    color: #222; /* Assuming a dark grey color from style.css */
+    color: #222; 
     margin-bottom: 10px;
 }
 
 #icon-about, #icon-templates, #icon-cv, #icon-certificates, #icon-cl{
     font-size: 3rem;
-    color: #ce9953; /* Assuming a blue color from style.css */
+    color: #ce9953; 
     margin: 2rem;
 }
 
 .card p {
     font-size: 1rem;
-    color: #555; /* Assuming a medium grey color from style.css */
-    margin: auto 0; /* Centering the paragraph vertically */
+    color: #555; 
+    margin: auto 0; 
 }
 
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #ce9953; /* Assuming a blue color from style.css */
+    background-color: #ce9953; 
     color: #fff;
     border-radius: 8px;
     text-decoration: none;
