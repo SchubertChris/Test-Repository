@@ -27,3 +27,14 @@
 
 📬 Schreib mir: [Schubert_Chris@rocketmail.com](mailto:Schubert_Chris@rocketmail.com)  
 🌍 **Candlescope**: [candlescope.de](https://candlescope.de)
+
+Aktuell lerne ich noch beim DCI (Digital-Carrer-Institute) in Berlin und werden am Ende folgende dinge beherschen!
+
+* [![Next][Next.js]][Next-url]
+* [![React][React.js]][React-url]
+* [![Vue][Vue.js]][Vue-url]
+* [![Angular][Angular.io]][Angular-url]
+* [![Svelte][Svelte.dev]][Svelte-url]
+* [![Laravel][Laravel.com]][Laravel-url]
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![JQuery][JQuery.com]][JQuery-url]
